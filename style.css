@@ -1,0 +1,524 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:antiquewhite;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+.en{
+    display:block;
+}
+.ar{
+    display:none !important;
+}
+
+    /*Text Alignment*/
+.flex{
+    display: flex;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+.right{/*Used to align arabic to the right*/
+    text-align: right;
+}
+.flex-end{ /*Used to align arabic to the right when the parent is a flex container*/
+    justify-content: flex-end;
+}
+.flex-center{
+    justify-content: center;
+}
+.flex-between{
+    justify-content: space-between;
+}
+.margin-auto{ /*Force block/flex element to the center*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.align-center{
+    align-items: center;
+}
+
+    /*Elements styles*/
+li{
+    list-style:none;
+    padding-left: 0.5rem;
+}
+a{
+    color:black;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+nav{
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    background-color: rgb(165, 138, 98);
+}
+nav a img{
+    width: 10rem;
+}
+ul.link-container{
+    flex-wrap:wrap;
+}
+ul.link-container li a{
+    margin-left: 1rem;
+    border:none;
+    font-weight: bold;
+}
+ul.link-container li a:hover{
+    border-bottom: 0.2rem solid white;
+    color:White;
+}
+.btn{
+    background-color:transparent;
+    border:1px solid black;
+    background-color:white;
+    border-radius:0.5rem;
+    padding:0.5rem;
+    transition: all 0.5s ease;
+}
+.btn.en:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+    background-color: black;
+    color:White;
+}
+div.burger{
+    z-index: 5;
+}
+div.burger:hover{
+    cursor: pointer;
+}
+div.burger span:nth-child(1){
+    margin-top:0.3rem;
+}
+div.burger span{
+    display: block;
+    background-color: black;
+    width: 2.2rem;
+    height: 0.4rem;
+    margin-bottom: 0.3rem;
+    transition: all 0.3s ease;
+}
+.topBarClockWise{
+    transform: translateY(12px) rotate(45deg);
+}
+.midBar{
+    opacity: 0;
+}
+.bottomBarCounterWise{
+    transform: translateY(-10px) rotate(-45deg);
+}
+.side-bar{
+    background: black;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    bottom: 0;
+    transition: all 0.4s ease;
+    z-index: 999;
+}
+.English.side-bar{
+    left: 0;
+    transform: translateX(-25rem); 
+}
+.Arabic.side-bar{
+    right: 0;
+    transform: translateX(25rem); 
+}
+.side-bar a{
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid white;
+    transition: all 0.3s ease;
+}
+.side-bar a:hover{
+    color:black;
+    background-color: white;
+}
+.overlay{
+    background-color: rgba(83, 83, 83, 0.842);
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 4;
+}
+.overlay:hover{
+    cursor:pointer;
+}
+.hidden{
+    display:none;
+}
+/*Image Slider*/
+.slider{
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.slider-images{
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease;
+    img{
+        width: 100%;
+        flex-shrink: 0;
+        height: auto;
+        max-height: 60vh;
+    }
+}
+.dots{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 15px;
+
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin:0px 10px;
+    background-color: #bbb;
+    cursor: pointer;
+}
+.dot.active {
+    background-color: #b1e072;
+}
+/*Section 1 & splitter*/
+section{
+    margin-top: 25px;
+    h1{
+        padding-top: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+div.label{
+    border:4px solid black;
+    padding: 0.5rem;
+    background-color: rgb(165, 138, 98);
+    text-align: center;
+    width: 10rem;
+
+}
+div.splitter{
+    padding-bottom: 1rem;
+}
+section span{
+    display: block;
+    background-color: black;
+    width: 50%;
+    height: 4px;
+}
+/*
+First Grid container
+*/
+section{
+    background-color: #fdfaf698;
+    position: relative;
+}
+.s1{
+    padding-bottom: 25px;
+}
+section svg{
+    z-index: -1;
+    position: absolute;
+}
+section svg.top{
+    top: 0;
+}
+section svg.bottom{
+    bottom: 0;
+}
+section button{
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 0.8rem;
+    padding: 0.4rem;
+    img{
+        padding-left: 0.3rem;
+        width: 25px;
+    }
+}
+section button:hover{
+    background-color: rgb(165, 138, 98);
+    cursor: pointer;
+}
+.projects-container{
+    padding: 1.5rem;
+    display: grid;
+    gap:1rem;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,minmax(300px,800px));
+    grid-auto-rows: 340px;
+    grid-template-areas: "project1 project2"
+                         "project3 project4"
+    ;
+    div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 0.5rem;
+        img{
+            width: 90%;
+            height: 80%;
+            border-radius: 0.5rem;
+        }
+    }
+}
+.project1{
+    background: radial-gradient(circle, rgba(208,183,139,1) 43%, rgba(255,255,255,1) 100%);
+    border-radius: 0.5rem;
+    grid-area: project1;
+}
+.project2{
+    background: radial-gradient(circle, rgba(208,183,139,1) 43%, rgba(255,255,255,1) 100%);    ;
+    border-radius: 0.5rem;
+    grid-area: project2;
+}
+.project3{
+    background: radial-gradient(circle, rgba(208,183,139,1) 43%, rgba(255,255,255,1) 100%);    ;
+    border-radius: 0.5rem;
+    grid-area: project3;
+}
+.project4{
+    background: radial-gradient(circle, rgba(208,183,139,1) 43%, rgba(255,255,255,1) 100%);    ;
+    border-radius: 0.5rem;
+    grid-area: project4;
+}
+/* Second Grid Container*/
+.services-container{
+    padding:1.5rem;
+    gap:1rem;
+    display: grid;
+    place-items:center;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    /* grid-template-rows: repeat(2,260px); */
+    grid-template-areas: "service1 service2 service3"
+                         ". service4 .";
+}
+.services-container div.service-style{
+    justify-content: center;
+    align-items: center;
+    row-gap:1.5rem;
+    color:white;
+    font-weight: bold;
+    background-color: #967F71;
+    border-bottom-right-radius:1.5rem;
+    border-bottom-left-radius:1.5rem;
+    width: 80%;
+    height: 100%;
+}
+.card{
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+.card:hover{
+    transform:rotateY(180deg);
+    cursor:pointer;
+}
+.card-face{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+    backface-visibility: hidden;
+    position: absolute;
+}
+div.back {
+    p{
+        width: 80%;
+    }
+}
+.back{
+    transform:rotateY(180deg)
+}
+.services-container img{
+    width: 5rem;
+}
+.service1{
+    grid-area: service1;
+}
+.service2{
+    grid-area: service2;
+}
+.service3{
+    grid-area: service3;
+}
+.service4{
+    grid-area: service4;
+}
+/*Section 3 */
+.special{
+    background-color: #967F71;
+}
+section div.why-container{
+    width: 55%;
+    padding-left:1.5rem;
+    padding-right: 1.5rem;
+    li{
+        list-style:disc;
+        margin-left:1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    h3{
+        padding:0.5rem;
+    }
+}
+.customDirection{
+    margin-left: auto;
+    text-align: right;
+    ul{
+        direction: rtl;
+    }
+}
+.reason{
+    border-radius: 0.5rem;
+    margin-bottom: 30px;
+    background-color: #d9d9d985;
+    padding:0.6rem 0;
+    box-shadow: -11px 12px 16px -3px rgba(161,147,132,0.75);
+    -webkit-box-shadow: -11px 12px 16px -3px rgba(161,147,132,0.75);
+
+}
+.rtl{
+    direction: rtl;
+}
+/*Footer*/
+footer{
+    height: 20rem
+}
+div.slogan{
+    padding:1rem 0;
+    text-align: center;
+}
+.info-area{
+    background-color: #3B3937;
+    height: 100%;
+    justify-content: space-around;
+}
+.item-left{
+    color:white;
+    h2{
+        font-weight: bolder;
+    }
+    p{
+        padding-bottom: 1rem;
+    }
+}
+.item-right{
+    color:white;
+    text-align: center;
+    h3{
+        padding:1rem 0;
+    }
+    a{
+        display: inline-block;
+        border-radius: 100%;
+        margin: 0 1.5rem;
+        img{
+            padding: 1rem;
+            width: 4.5rem;
+            background-color: rgba(145, 139, 107, 0.836);
+            border-radius: 100%;
+            transition:all 0.4s ease;
+
+        }
+    }
+}
+img#facebook:hover{
+    background-color: #5c58f6;
+}
+img#twitter:hover{
+    background-color: #86c4dd;
+}
+img#instagram:hover{
+    background-color: #b748d3;
+}
+img#youtube:hover{
+    background-color: #ff0000;
+}
+@media (width < 600px) {
+    ul.link-container{
+      display: none;
+    }
+  }
+@media (width >= 600px) {
+    div.burger{
+      display: none;
+    }
+  }
+@media (max-width: 768px) {
+    .slider-images img {
+        height: 320px;
+        object-fit: cover;
+    }
+    .projects-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "project1"
+                             "project2"
+                             "project3"
+                             "project4"
+        ;
+    }
+    .services-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: "service1"
+                             "service2"
+                             "service3"
+                             "service4"
+        ;   
+    }
+    div.service-style{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section.s3{
+        h1{
+            text-align: center;
+        }
+    }
+    section div.why-container{
+        width: 85%;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    div.info-area{
+        flex-direction: column-reverse;
+        padding-top: 1rem;
+
+    }
+    footer{
+        height: auto;
+    }
+}

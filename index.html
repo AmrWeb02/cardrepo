@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="flex align-center flex-between lang en">
+            <a href="#" target="_blank">
+                <img src="./assets/logo.png">
+            </a>
+            <button class="btn margin-auto lang en">EN | 🌏︎</button>
+            <ul class="link-container flex">
+                <li> <a href="#">Call Us</a></li>
+                <li> <a href="#">Plans</a></li>
+                <li> <a href="#">Projects</a></li>
+                <li> <a href="#">About Us</a></li>    
+                <li> <a href="#servicesEN">Services</a></li>
+                <li> <a href="#">Main Page</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="English side-bar hidden flex flex-col">
+                <a href="#">Call Us</a>
+                <a href="#">Plans</a>
+                <a href="#">Projects</a>
+                <a href="#">About Us</a>   
+                <a href="#">Services</a>
+                <a href="#">Main Page</a>
+            </div>
+            <!-- <div class="overlay"></div> -->
+        </nav>
+        <nav class="flex align-center flex-between lang ar">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="Arabic side-bar hidden flex flex-col right">
+                <a href="#">اتصل بنا</a>
+                <a href="#">باقات التشطيب</a>
+                <a href="#">مشاريعنا</a>
+                <a href="#">من نحن</a>   
+                <a href="#">خدماتنا</a>
+                <a href="#"> الصفحةالرئيسية</a>
+            </div>
+            <ul class="link-container flex">
+                <li> <a href="#">اتصل بنا</a></li>
+                <li> <a href="#">باقات التشطيب</a></li>
+                <li> <a href="#">مشاريعنا</a></li>
+                <li> <a href="#">من نحن</a></li>    
+                <li> <a href="#servicesAR">خدماتنا</a></li>
+                <li> <a href="#">الصفحة الرئيسية</a></li>
+            </ul>
+            <button class="btn margin-auto lang ar">AR | 🌏︎</button>
+
+
+            <a href="#" target="_blank">
+                <img src="./assets/logo.png">
+            </a>
+            <!-- <div class="overlay"></div> -->
+
+        </nav>
+        <div class="slider">
+            <div class="slider-images">
+                <img src="./assets/11.webp" alt="Image 1">
+                <img src="./assets/22.webp" alt="Image 2">
+                <img src="./assets/33.webp" alt="Image 3">
+                <img src="./assets/44.webp" alt="Image 4">
+            </div>
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+              </div>
+        </div>
+    </header>
+    <main>
+        <section class="lang en s1">
+            <div class="flex align-center">
+                <span></span>
+                <div class="label">Latest Projects</div>
+                <span></span>                
+            </div>
+            <h1>Our interior design services are tailored to your specific space, style, and budget</h1>
+            <div class="projects-container">
+                <div class="project1">
+                        <img src="./assets/2.jpg" alt="">
+                        <a href="#">Projct A | 140 square meters</a>
+                </div>
+                <div class="project2">
+                    <img src="./assets/3.jpg" alt="">
+                    <a href="#">Projct B | 160 square meters</a>
+                </div>
+                <div class="project3">
+                    <img src="./assets/33.webp" alt="">
+                    <a href="#">Projct A | 180 square meters</a>
+                </div>
+                <div class="project4">
+                    <img src="./assets/44.webp" alt="">
+                    <a href="#">Projct A | 220 square meters</a>
+                </div>
+            </div>
+            <button><a href="">All Projects</a><img src="./assets/magnifying-glass-search 1.svg"></button>
+        </section>
+        <section class="lang ar s1">
+            <div class="flex align-center">
+                <span></span>
+                <div class="label">أحدث مشارعنا</div>
+                <span></span>                
+            </div>
+            <h1 class="right">خدمات التصميم الداخلي لدينا وفقا لمساحتك وأسلوبك وميزانيتك</h1>
+            <div class="projects-container">
+                <div class="project1">
+                        <img src="./assets/2.jpg" alt="">
+                        <a href="#">مشروع رقم 1 : 140م </a>
+                </div>
+                <div class="project2">
+                    <img src="./assets/3.jpg" alt="">
+                    <a href="#">مشروع رقم 2 : 160م </a>
+                </div>
+                <div class="project3">
+                    <img src="./assets/33.webp" alt="">
+                    <a href="#">مشروع رقم 3 : 180م </a>
+                </div>
+                <div class="project4">
+                    <img src="./assets/44.webp" alt="">
+                    <a href="#">مشروع رقم 4 : 220م </a>
+                </div>
+            </div>
+            <button><img src="./assets/magnifying-glass-search 1.svg"><a href="">كل المشاريع</a></button>
+        </section>
+        <section class="lang en s2" id="servicesEN">
+            <svg class="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#967F71" fill-opacity="1" d="M0,160L24,154.7C48,149,96,139,144,112C192,85,240,43,288,74.7C336,107,384,213,432,218.7C480,224,528,128,576,96C624,64,672,96,720,106.7C768,117,816,107,864,117.3C912,128,960,160,1008,181.3C1056,203,1104,213,1152,202.7C1200,192,1248,160,1296,170.7C1344,181,1392,235,1416,261.3L1440,288L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
+            <svg class="bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#967F71" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,229.3C384,235,480,245,576,261.3C672,277,768,299,864,261.3C960,224,1056,128,1152,117.3C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>            <div class="flex align-center">
+                <span></span>
+                <div class="label">Our Services</div>
+                <span></span>                
+            </div>
+            <h1>Our interior design services are tailored to your specific space, style, and budget</h1>
+            <div class="services-container">
+                <div class="service1 service-style flex flex-col card">
+                    <div class="card-face front">
+                        <img src="assets/architectural 1.svg" alt="">
+                        <p>Exterior Designs</p> 
+                    </div>
+                    <div class="card-face back">
+                        <h3>Exterior Designs</h3>
+                        <p>Give your guests a stunning and lasting first impression when they see your elegant and sophisticated home exterior. Let your home's exterior design reflect your personality and refined lifestyle.</p>
+                    </div>
+                </div>
+                <div class="service2 service-style flex flex-col card">
+                    <div class="card-face front">
+                        <img src="assets/house-plan 1.svg" alt="">
+                        <p>Interior Designs</p>
+                    </div>
+                    <div class="card-face back">
+                        <h3>Interior Designs</h3>
+                        <p>Interior design is the art and science of creating functional and aesthetically pleasing spaces within a building.</p>
+                    </div>
+                </div>
+                <div class="service3 service-style flex flex-col card">
+                    <div class="card-face front">
+                        <img src="assets/kitchen 1.svg" alt="">
+                        <p>Decorations</p>
+                    </div>
+                    <div class="card-face back">
+                        <h3>Decorations</h3>
+                        <p>Decor Egypt is a top-notch finishing company in Egypt, boasting years of experience in interior design and finishing. We're skilled at bringing any design style to life using the best materials out there, and we offer a lifetime warranty on our foundation work.</p>
+                    </div>
+                </div>
+                <div class="service4 service-style flex flex-col card">
+                    <div class="card-face front">
+                        <img src="assets/cloud 1.svg" alt="">
+                        <p>Smart Homes</p>
+                    </div>
+                    <div class="card-face back">
+                        <h3>Smart Homes</h3>
+                        <p>Experience ultimate convenience with Decor Egypt's smart home solutions. Our systems offer advanced security, personalized climate control, and remote access to all your home's functions, including lighting and curtains, right from your smartphone.</p>
+                    </div>
+                </div>
+            </div>
+            <button><a href="">Call Us</a><img src="./assets/telephone 1.svg"></button>
+        </section>
+        <section class="lang ar s2" id="servicesAR">
+            <svg class="top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#967F71" fill-opacity="1" d="M0,160L24,154.7C48,149,96,139,144,112C192,85,240,43,288,74.7C336,107,384,213,432,218.7C480,224,528,128,576,96C624,64,672,96,720,106.7C768,117,816,107,864,117.3C912,128,960,160,1008,181.3C1056,203,1104,213,1152,202.7C1200,192,1248,160,1296,170.7C1344,181,1392,235,1416,261.3L1440,288L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
+            <svg class="bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#967F71" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,229.3C384,235,480,245,576,261.3C672,277,768,299,864,261.3C960,224,1056,128,1152,117.3C1248,107,1344,181,1392,218.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>            <div class="flex align-center">
+                <span></span>
+                <div class="label">خدماتنا</div>
+                <span></span>                
+            </div>
+            <h1 class="right"> خدمات التصميم الداخلي لدينا وفقا لمساحتك وأسلوبك وميزانيتك.</h1>
+            <div class="services-container">
+                <div class="service1 service-style flex flex-col card">
+                    <div class="card-face front">
+                        <img src="assets/architectural 1.svg" alt="">
+                        <p>تصميمات خاريجة</p> 
+                    </div>
+                    <div class="card-face back">
+                        <h3>تصميمات خاريجة</h3>
+                        <p>أعطي ضيوفك إنطباع أولي مذهل ودائم لدى رؤيتهم تصميم منزلك الخارجي الراقي والأنيق. إجعل التصميم الخارجي لمنزلك يعكس نمط شخصيتك وأسلوبك الراقي في الحياة.</p>
+                    </div>
+                </div>
+                <div class="service2 service-style flex flex-col card">
+                    <div class="card-face front">
+                        <img src="assets/house-plan 1.svg" alt="">
+                        <p>تصميمات داخلية</p>
+                    </div>
+                    <div class="card-face back">
+                        <h3>تصميمات داخلية</h3>
+                        <p>التصميم الداخلي هو فن وعلم تحسين المناطق الداخلية للمبنى لتحقيق بيئة أكثر صحة وجمالية للأشخاص الذين يستخدمون المساحة.</p>
+                    </div>
+                </div>
+                <div class="service3 service-style flex flex-col card">
+                    <div class="card-face front">
+                        <img src="assets/kitchen 1.svg" alt="">
+                        <p>تشطيبات وديكورات</p>
+                    </div>
+                    <div class="card-face back">
+                        <h3>تشطيبات وديكورات</h3>
+                        <p>تعد ديكور مصر من افصل شركات التشطيب في مصر لما لديها من خبرات واسعة في مجال الديكور والتشطيب. لدينا الكفاءة والخبرة الكافية علي تنفيذ جميع انماط التصميم واستخدام افضل الخامات الموجودة بالسوق وبشهادة ضمان مدي الحياة علي اعمال التأسيس.</p>
+                    </div>
+                </div>
+                <div class="service4 service-style flex flex-col card">
+                    <div class="card-face front">
+                        <img src="assets/cloud 1.svg" alt="">
+                        <p>البيت الذكي</p>
+                    </div>
+                    <div class="card-face back">
+                        <h3>البيت الذكي</h3>
+                        <p>فى ديكور مصر بنقدر نوفر احدث انظمة البيوت الذكية الموجودة فى السوق مثل انظمة الحماية ضد السرقة والحريق بالاضافة الى التحكم فى كل جزء فى البيت مثل التحكم فى الاضاءة والتكييف والمياه والغاز لكى وفتح وغلق الستائر عن طريق تطبيق على الموبايل.</p>
+                    </div>
+                </div>
+            </div>
+            <button><img src="./assets/telephone 1.svg"><a href="">اتصل بنا</a></button>
+        </section>
+        <section class="lang en s3">
+            <div class="flex align-center special">
+                <span></span>
+                <div class="label">Why Us</div>
+                <span></span>
+            </div>
+            <h1>Why Us</h1>
+            <div class="why-container">
+                <div class="reason r1">
+                    <h3>Experience & skill</h3>
+                    <ul>
+                        <li>Our team of talented interior designers has years of experience in crafting stunning and practical spaces.</li>
+                        <li>We're always up-to-date on the newest design trends and industry standards.</li>
+                    </ul>
+                </div>
+                <div class="reason r2">
+                    <h3>High Quality</h3>
+                    <ul>
+                        <li>We are committed to delivering the highest level of craftsmanship on every project.</li>
+                        <li>We team up with talented craftsmen to make amazing one-of-a-kind pieces.</li>
+                    </ul>
+                </div>
+                <div class="reason r3">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li>We offer top-notch customer service and keep you in the loop every step of the way.</li>
+                        <li>Your satisfaction is our top priority</li>
+                    </ul>
+                </div>
+                <div class="reason r4">
+                    <h3>Competitive prices</h3>
+                    <ul>
+                        <li>We offer competitive prices without compromising on quality</li>
+                        <li>We partner with you to tailor a budget to your specific requirements</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="lang ar s3">
+            <div class="flex align-center special">
+                <span></span>
+                <div class="label">لماذا نحن</div>
+                <span></span>
+            </div>
+            <h1 class="right">لماذا تختار شركة التصميم الخاصة بنا ؟</h1>
+            <div class="why-container customDirection">
+                <div class="reason r1">
+                    <h3>الخبرة والمهارة</h3>
+                    <ul>
+                        <li>فريقنا من مصممي الديكور الداخلي ذوي الخبرة يقدم سنوات من الخبرة والشغف لإنشاء مساحات جميلة وعملية.</li>
+                        <li>نحن على اطلاع دائم بأحدث اتجاهات التصميم وأفضل الممارسات في الصناعة.</li>
+                    </ul>
+                </div>
+                <div class="reason r2">
+                    <h3>جودة عالية</h3>
+                    <ul>
+                        <li>نحن ملتزمون بتقديم أعلى مستوى من الحرفية في كل مشروع.</li>
+                        <li>نتعاون مع الحرفيين المهرة لإنشاء قطع مخصصة مذهلة.</li>
+                    </ul>
+                </div>
+                <div class="reason r3">
+                    <h3>الأهتمام بالعميل</h3>
+                    <ul>
+                        <li>نقدم خدمة عملاء ممتازة ونحافظ على التواصل المفتوح طوال عملية التصميم.</li>
+                        <li>رضاك هو أولويتنا القصوى.</li>
+                    </ul>
+                </div>
+                <div class="reason r4">
+                    <h3>أسعار تنافسية</h3>
+                    <ul>
+                        <li>نقدم أسعارًا تنافسية دون المساومة على الجودة.</li>
+                        <li>نعمل معك لتطوير ميزانية تناسب احتياجاتك.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="lang en">
+        <div class="slogan flex align-center flex-col">
+            <h1>Transforming your home dreams into reality</h1>
+            <h2>Our premium finishes add a touch of elegance to every space</h2>
+        </div>
+        <div class="info-area flex align-center">
+            <div class="item-left">
+                <h2>Main Branch</h2>
+                <p>97 Highway st</p>
+                <h2>Second Branch</h2>
+                <p>91 Highway st</p>
+            </div>
+            <div class="item-right">
+                <h3>Follow us on Social Media</h3>
+                <a href="">
+                    <img src="./assets/FaceBook.svg"  id="facebook">
+                </a>
+                <a href="">
+                    <img src="./assets/twitter.svg" id="twitter">
+                </a>
+                <a href="" >
+                    <img src="./assets/Instagram.svg" id="instagram">  
+                </a>
+                <a href="" >
+                    <img src="./assets/Youtube.svg" id="youtube">                    
+                </a>
+            </div>
+        </div>
+    </footer>
+    <footer class="lang ar">
+        <div class="slogan flex align-center flex-col">
+            <h1>نحول أحلامك المنزليةإلى واقع ملموس </h1>
+            <h2>تشطيباتنا عالية الجودة تضفي لمسة من الرقي والجمال على مساحتك</h2>
+        </div>
+        <div class="info-area flex align-center right">
+            <div class="item-right">
+                <h3>تابعونا علي المنصات المختلفة</h3>
+                <a href="">
+                    <img src="./assets/FaceBook.svg"  id="facebook">
+                </a>
+                <a href="">
+                    <img src="./assets/twitter.svg" id="twitter">
+                </a>
+                <a href="" >
+                    <img src="./assets/Instagram.svg" id="instagram">  
+                </a>
+                <a href="" >
+                    <img src="./assets/Youtube.svg" id="youtube">                    
+                </a>
+            </div>
+            <div class="item-left">
+                <h2>الفرع الرئيسي</h2>
+                <p>المنصورة برج الشربيني الدور السابع</p>
+                <h2>الفرع الثاني</h2>
+                <p>مدينة 6 اكتوبر برج البرعي بلازا  امام مسجد الحصري الدور الثاني</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
+<!-- 
+Parent elements should always have classes "lang en" or "lang ar {optional: ar}"
+    <button id="btn">Language</button>
+
+    <h1 class="lang en">Hello <span>Amr</span></h1>
+    <h1 class="lang ar right">مرحبا <span>عمرو</span></h1>
+    
+    <ul class="lang flex en">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+    <ul class="lang flex ar flex-end">
+      <li>واحد</li>
+      <li>اثنين</li>
+      <li>ثلاثة</li>
+    </ul>
+-->
